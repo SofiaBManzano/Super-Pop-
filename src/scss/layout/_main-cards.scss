@@ -1,0 +1,66 @@
+.main {
+  padding: 20px;
+  width: 100%;
+  height: 458px;
+  background-color: $white-four;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    width: 250px;
+    height: 63px;
+  }
+  &__title {
+    text-align: center;
+    font-family: $font-title-home;
+    color: $color-primary;
+    font-size: 2.4rem;
+  }
+  &__description {
+    text-align: center;
+    color: $color-primary-blue;
+    font-size: 1.4rem;
+    font-family: $primary-font-family;
+  }
+  &__list {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgba(225, 115, 52, 0.21) solid 2px;
+    height: 73.8px;
+    width: 268px;
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: $primary-font-family;
+      color: $color-font-primary;
+      font-size: 1.4rem;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    background-color: $dirty-blue;
+    height: 42px;
+    width: 129px;
+    text-decoration: none;
+    color: $white-four;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: $primary-font-family;
+  }
+}
+
+.icon {
+  filter: invert(68%) sepia(31%) saturate(6848%) hue-rotate(340deg)
+    brightness(94%) contrast(87%);
+  width: 30px;
+  height: 30px;
+  margin-right: 100%;
+}
