@@ -1,0 +1,32 @@
+
+.legend {
+  border-bottom: solid $white-two 1px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & + & {
+      margin-bottom: 10px;
+  }
+  &__container {
+    display: flex;
+    .legend__icon {
+      color: $color-primary;
+      height: 18px;
+      margin-right: 10px;
+    }
+    .legend__title {
+      font-family: $primary-font-family;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: $color-font-primary;
+      text-transform: capitalize;
+      display: inline;
+    }
+  }
+  &__arrow {
+    height: 18px;
+    width: 16px;
+    color: $color-font-primary;
+  }
+}
