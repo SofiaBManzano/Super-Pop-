@@ -1,8 +1,15 @@
-// .page__footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-//   color: $color-secondary;
-// }
+.page__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--title {
+    font-family: $primary-font-family;
+    font-size: 1.4rem;
+    color: $color-copy;
+    &--logo {
+        background-color: aqua;
+      width: 303px;
+      height: 40px;
+    }
+  }
+}
