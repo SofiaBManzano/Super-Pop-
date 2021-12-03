@@ -2,14 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   &--title {
+    margin-top: 18px;
     font-family: $primary-font-family;
     font-size: 1.4rem;
     color: $color-copy;
-    &--logo {
-        background-color: aqua;
-      width: 303px;
-      height: 40px;
-    }
+    opacity: 0.5;
+    margin-bottom: 12px;
+  }
+  &--logo {
+    width: 103px;
+    height: 40px;
   }
 }
