@@ -3,6 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
   &--title {
     margin-top: 18px;
     font-family: $primary-font-family;
@@ -10,9 +17,16 @@
     color: $color-copy;
     opacity: 0.5;
     margin-bottom: 12px;
+    @media (min-width: 768px) {
+      margin-left: 40px;
+    }
   }
   &--logo {
     width: 103px;
     height: 40px;
+    @media (min-width: 768px) {
+     margin-top: 10px;
+     margin-right: 40px;
+    }
   }
 }
