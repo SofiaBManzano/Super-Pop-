@@ -13,6 +13,7 @@ body {
   padding-left: 28px;
   @media (min-width: 768px) {
     height: 90%;
+    justify-content: flex-end;
   }
 
   &__img {
@@ -44,6 +45,8 @@ body {
     margin-bottom: 18px;
     @media (min-width: 768px) {
       font-size: 1.6rem;
+      margin-right: 200px;
+      margin-left: 200px;
     }
   }
   &__list {
@@ -55,6 +58,11 @@ body {
     height: 73.8px;
     width: 268px;
     margin-bottom: 38.6px;
+    @media (min-width: 768px) {
+      margin-bottom: 200px;
+      height: 86px;
+      width: 325px;
+    }
     &--item {
       display: flex;
       flex-direction: column;
@@ -82,6 +90,9 @@ body {
     text-transform: uppercase;
     font-family: $primary-font-family;
     margin-bottom: 30px;
+    @media (min-width: 768px) {
+      margin-bottom: 69px;
+    }
   }
 }
 
