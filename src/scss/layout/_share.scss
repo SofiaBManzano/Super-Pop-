@@ -1,8 +1,26 @@
-.sharebutton{
-height:50px ;
-width: 199px;
-display: flex;
-border: radius 12px;
-background-color: $color-primary;
-font-family: $primary-font-family;
-font-size: 1.8rem;}
+.share_button {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    height: 50px;
+    width: 199px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background-color: $color-primary;
+    font-family: $primary-font-family;
+    color: $white;
+    border: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+
+    &--img {
+      height: 22px;
+      width: 25px;
+      margin-left: 10px;
+      color: $white;
+      
+    }
+  }
+}
