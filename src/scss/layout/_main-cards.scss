@@ -12,7 +12,7 @@ body {
   padding-right: 28px;
   padding-left: 28px;
   @media (min-width: 768px) {
-      height: 90vh;
+    height: 90%;
   }
 
   &__img {
@@ -21,10 +21,9 @@ body {
     height: 63px;
     margin-bottom: 35.4px;
     @media (min-width: 768px) {
-    height: 105px;
-    width: 419px;
-  }
-    
+      height: 105px;
+      width: 419px;
+    }
   }
   &__title {
     line-height: normal;
@@ -35,7 +34,6 @@ body {
     @media (min-width: 768px) {
       font-size: 2.4rem;
     }
-    
   }
   &__description {
     text-align: center;
@@ -45,7 +43,8 @@ body {
     font-family: $primary-font-family;
     margin-bottom: 18px;
     @media (min-width: 768px) {
-      font-size: 1.6rem;}
+      font-size: 1.6rem;
+    }
   }
   &__list {
     padding: 0px;
@@ -65,7 +64,8 @@ body {
       // color: $color-font-primary;
       font-size: 1.4rem;
       @media (min-width: 768px) {
-        font-size: 1.6rem;}
+        font-size: 1.6rem;
+      }
     }
   }
   &__button {
@@ -82,7 +82,6 @@ body {
     text-transform: uppercase;
     font-family: $primary-font-family;
     margin-bottom: 30px;
- 
   }
 }
 
@@ -93,6 +92,6 @@ body {
   height: 26px;
   margin: 0 auto;
   @media (min-width: 768px) {
-    height: 29px;}
+    height: 29px;
+  }
 }
-
