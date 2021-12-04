@@ -1,5 +1,11 @@
-// .page__header {
-//   display: flex;
-//   justify-content: space-evenly;
-//   margin-bottom: 3rem;
-// }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  height: 111px;
+  &__img {
+    width: 201px;
+    height: 50px;
+  }
+}
