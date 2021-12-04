@@ -1,0 +1,65 @@
+.card-container {
+  background-image: linear-gradient(#bfcdd0, #dde9ed);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reset-button {
+}
+.card {
+  background-color: white;
+  width: 240px;
+  height: 329px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  &__photo {
+    width: 240px;
+    height: 200px;
+    background-image: url(https://placekitten.com/240/200);
+  }
+  &__title {
+    &--name {
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      color: $color-primary-blue;
+      font-family: $font-title-card;
+      font-weight: bold;
+    }
+    &--subtitle {
+      font-size: 1.6rem;
+      color: $color-font-primary;
+      font-family: $font-title-card;
+    }
+  }
+  &__list {
+    display: flex;
+    &--icon {
+      border: 3px solid $green;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-1 {
+        width: 12px;
+        height: 18px;
+      }
+      &-2 {
+        width: 18px;
+        height: 18px;
+      }
+      &-3 {
+        width: 16px;
+        height: 18px;
+      }
+      &-4 {
+        width: 17px;
+        height: 18px;
+      }
+    }
+  }
+}
