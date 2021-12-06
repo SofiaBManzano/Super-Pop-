@@ -1,10 +1,12 @@
 .share_button {
-  visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  @media (min-width:768px){
+    display: inline-flex;
+  }
+  
   &__item {
     height: 50px;
     width: 199px;
@@ -36,15 +38,23 @@
     }
   }
 }
+.sharebuttonorange{background-color: $color-primary;
+color: $white;}
 
+.sharebuttongrey{background-color: $grey-btn;
+color:$white;
+}
+
+.collapsed{visibility: hidden;}
 
 .share_creation {
-  visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  @media (min-width:768px){
+    display: inline-flex;}
 
   &__title {
     font-family: $primary-font-family;

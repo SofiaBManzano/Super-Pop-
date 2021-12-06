@@ -1,15 +1,14 @@
-'use strict';
+'use strict'
 
-//ELEMENTO HTML
+//ELEMENTOS HTML
 
-const shareButton = document.querySelector('.share_button_item');
+const sharebutton = document.querySelector('.share_button__item');
+const sharecreation = document.querySelector('.share_creation ');
 
-
-//HANDLER
-
-function changeColorButton(){
-    shareButton.classList.remove("sharebuttonorange")
-    shareButton.classList.add("sharebuttongrey")
+//SHARE BUTTON
+function changeColor(event){
+    sharebutton.classList.toggle("sharebuttongrey")
+    sharecreation.classList.toggle("collapsed")
 }
 
-shareButton.addEventListener('click',changeColorButton);
+sharebutton.addEventListener('click',changeColor)
