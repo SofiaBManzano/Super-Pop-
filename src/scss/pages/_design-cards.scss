@@ -1,0 +1,8 @@
+main {
+  @media (min-width: 768px) {
+    background-color: linear-gradient(0deg, $white-four, $white 9%) no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 40px 20px 40px;
+  }
+}
