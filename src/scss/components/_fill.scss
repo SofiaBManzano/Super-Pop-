@@ -1,0 +1,54 @@
+.fill-container {
+  width: 100%;
+  padding: 25px 0 30px;
+  display: flex;
+  flex-direction: column;
+  .fill__label {
+    margin-bottom: 20px;
+    font-family: $primary-font-family;
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: $color-primary-blue;
+    display: flex;
+    flex-direction: column;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    .fill__input {
+      margin-top: 7px;
+      border: solid 1px $green;
+      padding: 7px 9px;
+      &::placeholder {
+        color: $grey-placeholder;
+        font-family: $primary-font-family;
+        font-size: 1.4rem;
+        line-height: 20px;
+      }
+    }
+    .label__container {
+      display: flex;
+      align-items: flex-end;
+    }
+    .fill__btn {
+      background-color: $color-primary;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.32);
+      color: $white;
+      font-family: $primary-font-family;
+      font-size: 1.4rem;
+      line-height: 1.43;
+      padding: 3px 22px;
+      width: 140px;
+      height: 30px;
+      margin-top: 7px;
+    }
+    .fill__profile-pic {
+      width: 30px;
+      height: 30px;
+      border: solid 1px $green;
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+}
