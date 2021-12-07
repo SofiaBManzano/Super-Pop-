@@ -1,8 +1,29 @@
 main {
   @media (min-width: 768px) {
-    background-color: linear-gradient(0deg, $white-four, $white 9%) no-repeat;
+    background-image: linear-gradient(to bottom, $white-four, $white 9%);
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px 40px 20px 40px;
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+}
+.card-section {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  @media (min-width: 1200px) {
+    flex-grow: 5;
+  }
+}
+.form-section {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  @media (min-width: 1200px) {
+    flex-shrink: 1;
   }
 }

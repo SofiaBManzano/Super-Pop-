@@ -1,0 +1,8 @@
+.form-section {
+  background-image: linear-gradient(to bottom, $white-four, $white 9%);
+  padding: 27px 20px 30px;
+  @media (min-width: 768px) {
+    background-image: none;
+    // background-color: pink;
+  }
+}
