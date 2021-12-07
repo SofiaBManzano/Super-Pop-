@@ -2,7 +2,8 @@
   background-image: linear-gradient(to bottom, $white-four, $white 9%);
   padding: 27px 20px 30px;
   @media (min-width: 768px) {
+    width: 50%;
     background-image: none;
-    // background-color: pink;
+    padding-right: 30px;
   }
 }

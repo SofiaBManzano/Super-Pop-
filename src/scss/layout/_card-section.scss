@@ -8,8 +8,11 @@
   align-items: center;
   @media (min-width: 768px) {
     border-radius: 6px;
-    width: 585px;
+    width: 50%;
     height: 812px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
   }
 }
 .container {
