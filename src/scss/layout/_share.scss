@@ -1,3 +1,9 @@
+.sharecontainer{
+  width: 100%;
+  padding-top: 30px;
+  
+}
+
 .share_button {
   display: flex;
   flex-direction: column;
@@ -46,7 +52,7 @@ color: $white;}
 color:$white;
 }
 
-.collapsed{visibility: hidden;}
+/*.collapsed{visibility: hidden;}*/
 
 .share_creation {
   display: flex;
@@ -88,6 +94,8 @@ color:$white;
     font-family: $primary-font-family;
     line-height: 1.43;
     &--img{color: $white;
-     margin-right: 10px;}
+     margin-right: 10px;
+    width: 18px;
+  height: 18px;}
   }
 }
