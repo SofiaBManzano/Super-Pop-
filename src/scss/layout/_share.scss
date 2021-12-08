@@ -8,9 +8,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  @media (min-width: 768px) {
-  }
 
   &__item {
     height: 50px;
@@ -51,7 +48,9 @@
   color: $white;
 }
 
-.collapsed{display: none;}
+/*.collapsed {
+  visibility: collapse;
+}*/
 
 .share_creation {
   display: flex;
@@ -59,14 +58,13 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  @media (min-width: 768px) {
-  }
 
   &__title {
     font-family: $primary-font-family;
     font-size: 1.8rem;
     font-weight: 600;
     color: $color-font-primary;
+    margin-top: 30px;
   }
   &__link {
     font-family: $primary-font-family;
