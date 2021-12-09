@@ -16,15 +16,9 @@ main {
     width: 50%;
     height: 100vh;
   }
-  @media (min-width: 1200px) {
-    flex-grow: 5;
-  }
 }
 .form-section {
   @media (min-width: 768px) {
     width: 50%;
-  }
-  @media (min-width: 1200px) {
-    flex-shrink: 1;
   }
 }
