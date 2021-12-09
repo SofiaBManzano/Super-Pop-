@@ -6,9 +6,14 @@ const sharebutton = document.querySelector(".share_button__item");
 const sharecreation = document.querySelector(".share_creation ");
 
 //SHARE BUTTON FUCNTION
-function changeColor(event) {
-  sharebutton.classList.toggle("sharebuttongrey");
-  sharecreation.classList.toggle("collapsed");
+
+
+function crearTarjeta() {
+  sharebutton.classList.remove("sharebuttonorange");
+  sharebutton.classList.add("sharebuttongrey");
+  sharecreation.classList.remove("collapsed");
+  
 }
 
-sharebutton.addEventListener("click", changeColor);
+sharebutton.addEventListener("click", crearTarjeta);
+

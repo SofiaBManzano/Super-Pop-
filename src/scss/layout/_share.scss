@@ -48,9 +48,10 @@
     color: $white;
   }
   
-  /*.collapsed {
+  .collapsed {
+    height:0;
     visibility: collapse;
-  }*/
+  }
   
   .share_creation {
     display: flex;
