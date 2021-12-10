@@ -31,4 +31,8 @@
     color: $color-font-primary;
     cursor: pointer;
   }
+
+  .collapsed {
+    display: none;
+  }
 }
