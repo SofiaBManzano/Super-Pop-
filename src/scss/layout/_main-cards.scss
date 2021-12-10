@@ -78,13 +78,10 @@ body {
     }
   }
   &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 21px;
     background-color: $dirty-blue;
-    height: 42px;
-    width: 129px;
+    line-height: 1, 5;
+    padding: 10px 20px;
     text-decoration: none;
     color: $white-four;
     font-size: 1.6rem;
