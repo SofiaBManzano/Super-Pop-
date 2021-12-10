@@ -1,7 +1,7 @@
 "use strict";
 
 //ELEMENTOS HTML
-
+/*
 const sharebutton = document.querySelector(".share_button__item");
 const sharecreation = document.querySelector(".share_creation ");
 
@@ -12,3 +12,4 @@ function changeColor(event) {
 }
 
 sharebutton.addEventListener("click", changeColor);
+*/
