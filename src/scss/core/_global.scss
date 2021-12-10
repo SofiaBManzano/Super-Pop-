@@ -4,3 +4,8 @@ html {
 .collapsed {
   display: none;
 }
+
+.sharebuttongrey {
+  background-color: $grey-btn;
+  color: $white;
+}
