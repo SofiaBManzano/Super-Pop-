@@ -16,24 +16,50 @@ shareButton.addEventListener("click", createAndShareCard);
 //Collapsables
 //Revisar collapsable en share
 
-const legends = document.querySelectorAll(".js-legend");
-const designContainer = document.querySelector(".design-container");
-const fillContainer = document.querySelector(".fill-container");
-const shareContainer = document.querySelector(".sharecontainer");
+// const legends = document.querySelectorAll(".js-legend");
+// const designContainer = document.querySelector(".design-container");
+// const fillContainer = document.querySelector(".fill-container");
+// const shareContainer = document.querySelector(".sharecontainer");
 
-function legendHandler() {
-  designContainer.classList.toggle("collapsed");
+// function legendHandler(event) {
+//   designContainer.classList.toggle("collapsed");
+//   event.preventDefault();
+// }
+
+// function legendHandler1(event) {
+//   fillContainer.classList.toggle("collapsed");
+//   event.preventDefault();
+// }
+
+// function legendHandler2(event) {
+//   shareContainer.classList.toggle("collapsed");
+//   event.preventDefault();
+// }
+
+// legends[0].addEventListener("click", legendHandler);
+// legends[1].addEventListener("click", legendHandler1);
+// legends[2].addEventListener("click", legendHandler2);
+
+//rellenar form
+const nameInput = document.querySelector(".js-fill__input");
+const nameCard = document.querySelector(".js-nameInput");
+const jobInput = document.querySelector(".js-job");
+const jobCard = document.querySelector(".js-jobInput");
+//handler
+function writeName() {
+  if (nameInput.value === "") {
+    nameCard.innerHTML = "Nombre Apellido";
+  } else {
+    nameCard.innerHTML = nameInput.value;
+  }
 }
-
-function legendHandler1() {
-  fillContainer.classList.toggle("collapsed");
+function writeJob() {
+  if (jobInput.value === "") {
+    jobCard.innerHTML = "Front-end developer";
+  } else {
+    jobCard.innerHTML = jobInput.value;
+  }
 }
-
-/*function legendHandler2(){
-  shareContainer.classList.toggle('collapsed');
-}
-*/
-
-legends[0].addEventListener("click", legendHandler);
-legends[1].addEventListener("click", legendHandler1);
-legends[2].addEventListener("click", legendHandler2);
+//listener
+nameInput.addEventListener("keyup", writeName);
+jobInput.addEventListener("keyup", writeJob);
