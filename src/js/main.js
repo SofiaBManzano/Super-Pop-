@@ -7,7 +7,7 @@ const sharebutton = document.querySelector('.share_button__item');
 const sharecreation = document.querySelector('.share_creation ');
 
 //SHARE BUTTON FUCNTION
-function changeColor(event) {
+function changeColor() {
   sharebutton.classList.toggle('sharebuttongrey');
   sharecreation.classList.toggle('collapsed');
 }
@@ -36,17 +36,44 @@ function legendHandler2(){
   shareContainer.classList.toggle('collapsed');
 }
 
- 
 legends[0].addEventListener('click', legendHandler);
 legends[1].addEventListener('click', legendHandler1);
 legends[2].addEventListener('click', legendHandler2);
 
 
 
+//rellenar form
+const nameInput = document.querySelector('.js-fullname');
+const nameCard = document.querySelector('.js-nameInput');
+const jobInput = document.querySelector('.js-job');
+const jobCard = document.querySelector('.js-jobInput');
+//handler
+function writeName() {
+  if (nameInput.value === '') {
+    
+    nameCard.innerHTML = 'Nombre Apellido';
+  } else {
+    nameCard.innerHTML = nameInput.value;
+  }
+}
+function writeJob() {
+  if (jobInput.value === '') {
+    jobCard.innerHTML = 'Front-end developer';
+  } else {
+    jobCard.innerHTML = jobInput.value;
+  }
+}
+//listener
+nameInput.addEventListener('input', writeName);
+jobInput.addEventListener('input', writeJob);
 
+//Botón reset
+const resetBtn = document.querySelector('.js-resetBtn');
 
+resetBtn.addEventListener('click', () =>{
+  nameCard.innerHTML = 'Nombre Apellido';
+  jobCard.innerHTML = 'Front-end developer';
 
-
-
+});
 
 
