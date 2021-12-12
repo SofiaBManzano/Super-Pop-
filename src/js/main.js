@@ -16,29 +16,8 @@ shareButton.addEventListener("click", createAndShareCard);
 //Collapsables
 //Revisar collapsable en share
 
-// const legends = document.querySelectorAll(".js-legend");
-// const designContainer = document.querySelector(".design-container");
-// const fillContainer = document.querySelector(".fill-container");
-// const shareContainer = document.querySelector(".sharecontainer");
 
-// function legendHandler(event) {
-//   designContainer.classList.toggle("collapsed");
-//   event.preventDefault();
-// }
 
-// function legendHandler1(event) {
-//   fillContainer.classList.toggle("collapsed");
-//   event.preventDefault();
-// }
-
-// function legendHandler2(event) {
-//   shareContainer.classList.toggle("collapsed");
-//   event.preventDefault();
-// }
-
-// legends[0].addEventListener("click", legendHandler);
-// legends[1].addEventListener("click", legendHandler1);
-// legends[2].addEventListener("click", legendHandler2);
 
 //rellenar form
 const nameInput = document.querySelector(".js-fill__input");
