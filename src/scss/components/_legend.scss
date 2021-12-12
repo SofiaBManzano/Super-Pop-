@@ -10,19 +10,26 @@
     margin-bottom: 10px;
   }
   &__container {
+    width: 100%;
     display: flex;
-    .legend__icon {
-      fill: $color-primary;
-      height: 18px;
-      margin-right: 10px;
-    }
-    .legend__title {
-      font-family: $primary-font-family;
-      font-weight: 600;
-      font-size: 1.8rem;
-      color: $color-font-primary;
-      text-transform: uppercase;
-      display: inline;
+    justify-content: space-between;
+    cursor: pointer;
+    &--icon {
+      display: flex;
+
+      .legend__icon {
+        fill: $color-primary;
+        height: 18px;
+        margin-right: 10px;
+      }
+      .legend__title {
+        font-family: $primary-font-family;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: $color-font-primary;
+        text-transform: uppercase;
+        display: inline;
+      }
     }
   }
   &__arrow {
