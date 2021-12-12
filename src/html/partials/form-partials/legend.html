@@ -1,18 +1,20 @@
-<fieldset class="legend js-legend">
-  <div class="legend__container">
+<fieldset class="legend">
+  <div class="js-legend legend__container">
+    <div class="legend__container--icon">
+      <img
+        class="legend__icon"
+        src="./assets/images/@@icon"
+        alt="@@iconAlt"
+        title="@@iconTitle"
+      />
+      <legend class="legend__title">@@title</legend>
+    </div>
     <img
-      class="legend__icon"
-      src="./assets/images/@@icon"
-      alt="@@iconAlt"
-      title="@@iconTitle"
+      class="legend__arrow"
+      src="./assets/images/arrow-icon.svg"
+      alt="arrow"
+      title="Click to open"
     />
-    <legend class="legend__title">@@title</legend>
   </div>
-  <img
-    class="legend__arrow"
-    src="./assets/images/arrow-icon.svg"
-    alt="arrow"
-    title="Click to open"
-  />
   <include src="@@includeSrc"></include>
 </fieldset>
