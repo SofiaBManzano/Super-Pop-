@@ -47,6 +47,16 @@ const nameInput = document.querySelector('.js-fullname');
 const nameCard = document.querySelector('.js-nameInput');
 const jobInput = document.querySelector('.js-job');
 const jobCard = document.querySelector('.js-jobInput');
+
+const emailInput = document.querySelector('.js-email');
+const emailPreview = document.querySelector('.js_preview_email');
+
+function handleKeyEmail() {
+  emailPreview.href = `mailto:${emailInput.value}`;
+}
+
+emailInput.addEventListener('keyup', handleKeyEmail);
+
 //handler
 function writeName() {
   if (nameInput.value === ''){
