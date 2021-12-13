@@ -47,15 +47,8 @@ const nameInput = document.querySelector('.js-fullname');
 const nameCard = document.querySelector('.js-nameInput');
 const jobInput = document.querySelector('.js-job');
 const jobCard = document.querySelector('.js-jobInput');
-
 const emailInput = document.querySelector('.js-email');
 const emailPreview = document.querySelector('.js_preview_email');
-
-function handleKeyEmail() {
-  emailPreview.href = `mailto:${emailInput.value}`;
-}
-
-emailInput.addEventListener('keyup', handleKeyEmail);
 
 //handler
 function writeName() {
@@ -72,9 +65,14 @@ function writeJob() {
     jobCard.innerHTML = jobInput.value;
   }
 }
+function handleKeyEmail() {
+  emailPreview.href = `mailto:${emailInput.value}`;
+}
+
 //listener
 nameInput.addEventListener('input', writeName);
 jobInput.addEventListener('input', writeJob);
+emailInput.addEventListener('keyup', handleKeyEmail);
 
 //Botón reset
 const resetBtn = document.querySelector('.js-resetBtn');
