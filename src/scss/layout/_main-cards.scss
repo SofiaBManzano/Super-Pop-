@@ -1,7 +1,7 @@
 body {
   height: 100vh;
 }
-.main {
+.maincards {
   height: 83%;
   width: 100%;
   background-color: $white-four;
@@ -14,6 +14,7 @@ body {
   @media (min-width: 768px) {
     height: 90%;
     justify-content: flex-end;
+    background-color: $white-four;
   }
 
   &__img {
@@ -63,6 +64,9 @@ body {
       height: 86px;
       width: 325px;
     }
+    @media (min-width: 1200px) {
+      margin-bottom: 100px;
+    }
     &--item {
       display: flex;
       flex-direction: column;
@@ -77,13 +81,10 @@ body {
     }
   }
   &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 21px;
     background-color: $dirty-blue;
-    height: 42px;
-    width: 129px;
+    line-height: 1, 5;
+    padding: 10px 20px;
     text-decoration: none;
     color: $white-four;
     font-size: 1.6rem;

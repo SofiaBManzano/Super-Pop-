@@ -6,10 +6,6 @@
   justify-content: space-between;
   margin-bottom: 10px;
 
-  @media all and (min-width: 1024px) {
-    width: 329px;
-  }
-
   &:last-of-type {
     margin-bottom: 10px;
   }
@@ -34,5 +30,9 @@
     width: 16px;
     color: $color-font-primary;
     cursor: pointer;
+  }
+
+  .collapsed {
+    display: none;
   }
 }

@@ -38,6 +38,7 @@
       }
     }
   }
+<<<<<<< HEAD
   .sharebuttonorange {
     background-color: $color-primary;
     color: $white;
@@ -46,6 +47,32 @@
   .sharebuttongrey {
     background-color: $grey-btn;
     color: $white;
+=======
+}
+.sharebuttonorange {
+  background-color: $color-primary;
+  color: $white;
+}
+
+.sharebuttongrey {
+  background-color: $grey-btn;
+  color: $white;
+}
+
+.share_creation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  &__title {
+    font-family: $primary-font-family;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-font-primary;
+    margin-top: 30px;
+>>>>>>> pareja_2
   }
   
   .collapsed {
