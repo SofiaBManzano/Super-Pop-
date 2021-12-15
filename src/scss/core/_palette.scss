@@ -1,0 +1,57 @@
+
+/*@mixin firstPalette{
+    $color-primary-blue: #114e4e;//Nombre,Apellido e iconos
+    $dirty-blue: #438792;//tiny rectangulo
+    $green: #a2deaf;// circulitos
+}
+
+@mixin secondPalette{
+    $dried-blood: #420101;
+    $red: #bd1010;
+    $tomato: #e95626;
+}
+
+@mixin thirdPalette{
+    $slate: #3e5b65;
+    $yellow: #eab052;
+    $sky-blue: #a0c0cf;
+}*/
+
+
+//RECTANGULO 
+.rectanglered{
+    background-color: $red; 
+    width: 5px;
+    height: 42px;
+}
+.rectangleblue{ 
+    background-color: $dirty-blue; 
+      width: 5px;
+      height: 42px;
+}
+.rectanglemix{ 
+    background-color: $yellow; 
+      width: 5px;
+      height: 42px;
+}
+
+//NOMBRE Y APELLIDOS 
+
+.namered {
+    line-height: 1.11;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: $dried-blood; //$dried-blood
+    font-family: $font-title-card;
+    font-weight: bold;
+  }
+.namemix {
+    line-height: 1.11;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: $slate; //$dried-blood
+    font-family: $font-title-card;
+    font-weight: bold;
+  }
+
+  //CIRCULOS ICONOS 

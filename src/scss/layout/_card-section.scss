@@ -45,8 +45,8 @@
     width: 54px;
     &--icon {
       margin-right: 10px;
-      border: 3px solid $green;
       border-radius: 50%;
+      border: 3px solid $green; //$tomato
       width: 32px;
       height: 32px;
       display: flex;
@@ -78,11 +78,11 @@
     align-items: flex-end;
     padding-bottom: 10px;
 
-    &--rectangle {
-      background-color: $dirty-blue;
-      width: 5px;
-      height: 42px;
-    }
+    //&--rectangle {
+     //background-color: $dirty-blue; //$red
+      //width: 5px;
+      //height: 42px;
+    //}
     &--text {
       padding-left: 20px;
     }
@@ -92,7 +92,7 @@
   line-height: 1.11;
   font-size: 1.8rem;
   text-transform: capitalize;
-  color: $color-primary-blue;
+  color: $color-primary-blue; //$dried-blood
   font-family: $font-title-card;
   font-weight: bold;
 }
