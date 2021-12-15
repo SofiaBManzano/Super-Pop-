@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adalab Web Starter Kit</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        class="header__img"
+        src="./assets/images/tarjetas-molonas.png"
+        alt="awesome profile cards"
+      />
+    </header>
+
+    <main class="designmain">
+      <section class="card-container">
+        <div class="container">
+          <button class="reset__button js-resetBtn" type="reset" form="form">
+            <span class="reset__button--icon"
+              ><img src="./assets/images/trash-alt-regular.svg" alt="" /></span
+            ><small class="reset__button--reset"> Reset</small>
+          </button>
+          <article class="card">
+            <div class="card__title">
+              <div class="card__title--rectangle"></div>
+              <div class="card__title--text">
+                <h3 class="name js-nameInput">nombre apellido</h3>
+                <h4 class="subtitle js-jobInput">Front-end developer</h4>
+              </div>
+            </div>
+            <div class="card__photo"></div>
+            <ul class="card__list">
+              <li>
+                <div class="card__list--icon">
+                  <a href="#">
+                    <img
+                      class="card__list--icon-1"
+                      src="./assets/images/mobile-alt-solid.svg"
+                      alt="mobile"
+                  /></a>
+                </div>
+              </li>
+              <li>
+                <div class="card__list--icon">
+                  <a href="mailto:email@email.com" class="js_preview_email">
+                    <img
+                      class="card__list--icon-2"
+                      src="./assets/images/envelope-regular.svg"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+              <li>
+                <div class="card__list--icon">
+                  <a href="#"
+                    ><img
+                      class="card__list--icon-3"
+                      src="./assets/images/linkedin-in-brands.svg"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+              <li>
+                <div class="card__list--icon">
+                  <a href="#"
+                    ><img
+                      class="card__list--icon-4"
+                      src="./assets/images/github-alt-brands.svg"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <form class="form-section" action="" id="form">
+        <fieldset class="legend">
+          <div class="js-legend legend__container">
+            <div class="legend__container--icon">
+              <img
+                class="legend__icon"
+                src="./assets/images/design-icon.svg"
+                alt="icono de diseño"
+                title="diseña tu tarjeta"
+              />
+              <legend class="legend__title">diseña</legend>
+            </div>
+            <img
+              class="legend__arrow"
+              src="./assets/images/arrow-icon.svg"
+              alt="arrow"
+              title="Click to open"
+            />
+          </div>
+          <div class="design-container js-container">
+            <h4 class="design__title">Colores</h4>
+            <div class="options-container">
+              <label class="design__label" for="blue-green">
+                <input
+                  class="design__radio"
+                  type="radio"
+                  name="color-palet"
+                  id="blue-green"
+                  checked
+                />
+                <div class="design__color design__color--primary-blue"></div>
+                <div class="design__color design__color--dirty-blue"></div>
+                <div class="design__color design__color--green"></div>
+              </label>
+
+              <label class="design__label" for="red-orange">
+                <input
+                  class="design__radio"
+                  type="radio"
+                  name="color-palet"
+                  id="red-orange"
+                />
+                <div class="design__color design__color--dried-blood"></div>
+                <div class="design__color design__color--red"></div>
+                <div class="design__color design__color--tomato"></div>
+              </label>
+
+              <label class="design__label" for="color-mix">
+                <input
+                  class="design__radio"
+                  type="radio"
+                  name="color-palet"
+                  id="color-mix"
+                />
+                <div class="design__color design__color--slate"></div>
+                <div class="design__color design__color--yellow"></div>
+                <div class="design__color design__color--sky-blue"></div>
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="legend">
+          <div class="js-legend legend__container">
+            <div class="legend__container--icon">
+              <img
+                class="legend__icon"
+                src="./assets/images/fill-icon.svg"
+                alt="icono de relleno"
+                title="Rellena tu tarjeta"
+              />
+              <legend class="legend__title">Rellena</legend>
+            </div>
+            <img
+              class="legend__arrow"
+              src="./assets/images/arrow-icon.svg"
+              alt="arrow"
+              title="Click to open"
+            />
+          </div>
+          <div class="fill-container">
+            <label class="fill__label" for="name"
+              >Nombre completo
+              <input
+                class="fill__input js-fullname"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ej.: Sally Jill"
+              />
+            </label>
+            <label class="fill__label" for="job"
+              >Puesto
+              <input
+                class="fill__input js-job"
+                type="text"
+                name="job"
+                id="job"
+                placeholder="Ej.: Front-end unicorn"
+              />
+            </label>
+            <label class="fill__label" for="profilePic"
+              >Imagen de perfil
+              <div class="label__container">
+                <button class="fill__btn">Añadir imagen</button>
+                <div class="fill__profile-pic"></div>
+              </div>
+            </label>
+            <label class="fill__label" for="email"
+              >Email
+              <input
+                class="fill__input js-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ej.: sally-hill@gmail.com"
+              />
+            </label>
+            <label class="fill__label" for="phone"
+              >Teléfono
+              <input
+                class="fill__input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Ej.: 555-55-55-55"
+              />
+            </label>
+            <label class="fill__label" for="linkedin"
+              >Linkedin
+              <input
+                class="fill__input"
+                type="text"
+                name="linkedin"
+                id="linkedin"
+                placeholder="Ej.: linkedin.com/in/sally.hill"
+              />
+            </label>
+            <label class="fill__label" for="github"
+              >Github
+              <input
+                class="fill__input"
+                type="text"
+                name="github"
+                id="github"
+                placeholder="Ej.: @sally-hill"
+              />
+            </label>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="legend">
+          <div class="js-legend legend__container">
+            <div class="legend__container--icon">
+              <img
+                class="legend__icon"
+                src="./assets/images/share-icon.svg"
+                alt="icono de compartir"
+                title="Comparte tu tarjeta"
+              />
+              <legend class="legend__title">Comparte</legend>
+            </div>
+            <img
+              class="legend__arrow"
+              src="./assets/images/arrow-icon.svg"
+              alt="arrow"
+              title="Click to open"
+            />
+          </div>
+          <div class="sharecontainer">
+            <section class="share_button">
+              <div class="share_button__item sharebuttonorange">
+                <img
+                  class="share_button__item--img"
+                  src="./assets/images/address-card-regular (2).svg"
+                  title="icon"
+                />Crear Tarjeta
+              </div>
+            </section>
+
+            <section class="share_creation collapsed">
+              <div class="share_button__item--line"></div>
+              <h3 class="share_creation__title">La tarjeta ha sido creada:</h3>
+              <a
+                class="share_creation__link href"
+                src="https://awesome-profile-card.com?id=A456DF0001"
+                >https://awesome-profile-card.com?id=A456DF0001</a
+              >
+              <a class="share_creation__twitter" href="#"
+                ><img
+                  class="share_creation__twitter--img"
+                  src="./assets/images/twitter.svg"
+                />Compartir en Twitter</a
+              >
+            </section>
+          </div>
+
+        </fieldset>
+
+      </form>
+
+    </main>
+    <footer class="page__footer">
+      <h6 class="page__footer--title">Awesome profile-cards @2021</h6>
+      <img class="page__footer--logo" src="./assets/images/logo-adalab.png" alt="" />
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
