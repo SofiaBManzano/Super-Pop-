@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
 //rellenar form
-const nameInput = document.querySelector('.js-fullname');
-const nameCard = document.querySelector('.js-nameInput');
-const jobInput = document.querySelector('.js-job');
-const jobCard = document.querySelector('.js-jobInput');
-const emailInput = document.querySelector('.js-email');
-const emailPreview = document.querySelector('.js_preview_email');
-const allInput= document.querySelectorAll('.fill__input-js');
+const nameInput = document.querySelector(".js-fullname");
+const nameCard = document.querySelector(".js-nameInput");
+const jobInput = document.querySelector(".js-job");
+const jobCard = document.querySelector(".js-jobInput");
+const emailInput = document.querySelector(".js-email");
+const emailPreview = document.querySelector(".js_preview_email");
+const allInput = document.querySelectorAll(".fill__input-js");
 //handler
 /*function writeName() {
   if (nameInput.value === ''){
@@ -33,36 +33,36 @@ jobInput.addEventListener('input', writeJob);
 emailInput.addEventListener('keyup', handleKeyEmail);*/
 
 const data = {
-  palette:"",
-  name:"",
-  job:"",
-  phone:"",
-  email:"",
-  linkedin:"",
-  github:"",
-  photo:"",
+  palette: "",
+  name: "",
+  job: "",
+  phone: "",
+  email: "",
+  linkedin: "",
+  github: "",
+  photo: "",
+};
+
+function handleWriteInput(event) {
+  event.preventDefault();
+  let userInputName = event.currentTarget.name;
+  let userInputValue = event.currentTarget.value;
+  console.log(event.currentTarget);
+
+  if (userInputName === "name") {
+    userInputValue = data.name;
+  }
+  return userInputValue;
 }
-
-
-function handleWriteInput(event){
-  const userInput = event.currentTarget.name;
-  const userValue = event.currentTarget.value;
-
- 
-}
-
-
 
 //Listener form
-for (const eachInput of allInput){
-  eachInput.addEventListener('keyup', handleWriteInput)
+for (const eachInput of allInput) {
+  eachInput.addEventListener("keyup", handleWriteInput);
 }
 
-
 //Botón reset
-const resetBtn = document.querySelector('.js-resetBtn');
-resetBtn.addEventListener('click', () =>{
-  nameCard.innerHTML = 'Nombre Apellido';
-  jobCard.innerHTML = 'Front-end developer';
-
+const resetBtn = document.querySelector(".js-resetBtn");
+resetBtn.addEventListener("click", () => {
+  nameCard.innerHTML = "Nombre Apellido";
+  jobCard.innerHTML = "Front-end developer";
 });
