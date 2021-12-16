@@ -46,15 +46,16 @@
     &--icon {
       margin-right: 10px;
       border-radius: 50%;
-      border: 3px solid $green; //$tomato
       width: 32px;
       height: 32px;
       display: flex;
       justify-content: center;
       align-items: center;
+      
       &-1 {
         width: 12px;
         height: 18px;
+        
       }
       &-2 {
         width: 18px;
@@ -78,11 +79,11 @@
     align-items: flex-end;
     padding-bottom: 10px;
 
-    //&--rectangle {
-     //background-color: $dirty-blue; //$red
-      //width: 5px;
-      //height: 42px;
-    //}
+    &--rectangle {
+      background-color: $dirty-blue; //$red
+      width: 5px;
+      height: 42px;
+    }
     &--text {
       padding-left: 20px;
     }
@@ -118,7 +119,6 @@
 
   &--icon {
     width: 11px;
-
     margin-top: 2px;
   }
   &--reset {
