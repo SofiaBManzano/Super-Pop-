@@ -57,3 +57,4 @@ function handleChangeColorCard(event) {
 for (const eachPalette of colorOptions) {
   eachPalette.addEventListener("click", handleChangeColorCard);
 }
+
