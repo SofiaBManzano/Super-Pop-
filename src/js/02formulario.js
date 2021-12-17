@@ -32,7 +32,7 @@ nameInput.addEventListener('input', writeName);
 jobInput.addEventListener('input', writeJob);
 emailInput.addEventListener('keyup', handleKeyEmail);*/
 
-const data = {
+let data = {
   palette: "",
   name: "",
   job: "",
@@ -43,21 +43,32 @@ const data = {
   photo: "",
 };
 
-function handleWriteInput(event) {
-  event.preventDefault();
-  let userInputName = event.currentTarget.name;
-  let userInputValue = event.currentTarget.value;
-  console.log(event.currentTarget);
-
+function getUserData(input) {
+  let userInputName = input.currentTarget.name;
+  let userInputValue = input.currentTarget.value;
   if (userInputName === "name") {
-    userInputValue = data.name;
+    data.name = userInputValue;
+    console.log(userInputValue);
+  } else if (userInputName === "job") {
+    data.job = userInputValue;
+  } else if (userInputName === "phone") {
+    data.phone = userInputValue;
+  } else if (userInputName === "email") {
+    data.email = userInputValue;
+  } else if (userInputName === "linkedin") {
+    data.linkedin = userInputValue;
+  } else if (userInputName === "github") {
+    data.github = userInputValue;
   }
-  return userInputValue;
+}
+function handleInputData(event) {
+  event.preventDefault();
+  getUserData(event);
 }
 
 //Listener form
 for (const eachInput of allInput) {
-  eachInput.addEventListener("keyup", handleWriteInput);
+  eachInput.addEventListener("keyup", handleInputData);
 }
 
 //Botón reset
