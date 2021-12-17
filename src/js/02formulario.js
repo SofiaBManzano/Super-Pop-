@@ -47,14 +47,24 @@ function getUserData(input) {
   let userInputName = input.currentTarget.name;
   let userInputValue = input.currentTarget.value;
   if (userInputName === "name") {
-    data.name = userInputValue;
-    console.log(userInputValue);
+    if (nameInput.value === "") {
+      nameCard.innerHTML = "Nombre Apellido";
+    } else {
+      data.name = userInputValue;
+      nameCard.innerHTML = data.name;
+    }
   } else if (userInputName === "job") {
-    data.job = userInputValue;
+    if (jobInput.value === "") {
+      jobCard.innerHTML = "Front-end developer";
+    } else {
+      data.job = userInputValue;
+      jobCard.innerHTML = data.job;
+    }
   } else if (userInputName === "phone") {
     data.phone = userInputValue;
   } else if (userInputName === "email") {
     data.email = userInputValue;
+    emailPreview.href = `mailto:${userInputValue}`;
   } else if (userInputName === "linkedin") {
     data.linkedin = userInputValue;
   } else if (userInputName === "github") {
