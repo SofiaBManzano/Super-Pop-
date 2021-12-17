@@ -33,7 +33,7 @@ jobInput.addEventListener('input', writeJob);
 emailInput.addEventListener('keyup', handleKeyEmail);*/
 
 let data = {
-  palette: "",
+  palette: 1,
   name: "",
   job: "",
   phone: "",
