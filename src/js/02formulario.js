@@ -62,6 +62,7 @@ function getUserData(input) {
     }
   } else if (userInputName === "phone") {
     data.phone = userInputValue;
+    emailPreview.href = `tel:${userInputValue}`;
   } else if (userInputName === "email") {
     data.email = userInputValue;
     emailPreview.href = `mailto:${userInputValue}`;
