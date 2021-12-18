@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 "use strict";
 
 //ELEMENTOS HTML
@@ -5,6 +6,8 @@
 //Collapsables
 //Falta mejorar hacer 1 sola funcion para los collapsables
 
+
+/*
 const legends = document.querySelectorAll(".js-legend");
 const designContainer = document.querySelector(".design-container");
 const fillContainer = document.querySelector(".fill-container");
@@ -25,3 +28,4 @@ function legendHandler2() {
 legends[0].addEventListener("click", legendHandler);
 legends[1].addEventListener("click", legendHandler1);
 legends[2].addEventListener("click", legendHandler2);
+*/
