@@ -32,8 +32,8 @@ nameInput.addEventListener('input', writeName);
 jobInput.addEventListener('input', writeJob);
 emailInput.addEventListener('keyup', handleKeyEmail);*/
 
-const data = {
-  palette: "",
+let data = {
+  palette: 1,
   name: "",
   job: "",
   phone: "",
@@ -43,21 +43,42 @@ const data = {
   photo: "",
 };
 
-function handleWriteInput(event) {
-  event.preventDefault();
-  let userInputName = event.currentTarget.name;
-  let userInputValue = event.currentTarget.value;
-  console.log(event.currentTarget);
-
+function getUserData(input) {
+  let userInputName = input.currentTarget.name;
+  let userInputValue = input.currentTarget.value;
   if (userInputName === "name") {
-    userInputValue = data.name;
+    if (nameInput.value === "") {
+      nameCard.innerHTML = "Nombre Apellido";
+    } else {
+      data.name = userInputValue;
+      nameCard.innerHTML = data.name;
+    }
+  } else if (userInputName === "job") {
+    if (jobInput.value === "") {
+      jobCard.innerHTML = "Front-end developer";
+    } else {
+      data.job = userInputValue;
+      jobCard.innerHTML = data.job;
+    }
+  } else if (userInputName === "phone") {
+    data.phone = userInputValue;
+  } else if (userInputName === "email") {
+    data.email = userInputValue;
+    emailPreview.href = `mailto:${userInputValue}`;
+  } else if (userInputName === "linkedin") {
+    data.linkedin = userInputValue;
+  } else if (userInputName === "github") {
+    data.github = userInputValue;
   }
-  return userInputValue;
+}
+function handleInputData(event) {
+  event.preventDefault();
+  getUserData(event);
 }
 
 //Listener form
 for (const eachInput of allInput) {
-  eachInput.addEventListener("keyup", handleWriteInput);
+  eachInput.addEventListener("keyup", handleInputData);
 }
 
 //Botón reset
