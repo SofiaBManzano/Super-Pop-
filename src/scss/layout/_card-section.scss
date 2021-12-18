@@ -80,7 +80,6 @@
     padding-bottom: 10px;
 
     &--rectangle {
-      background-color: $dirty-blue; //$red
       width: 5px;
       height: 42px;
     }
@@ -93,7 +92,6 @@
   line-height: 1.11;
   font-size: 1.8rem;
   text-transform: capitalize;
-  color: $color-primary-blue; //$dried-blood
   font-family: $font-title-card;
   font-weight: bold;
 }

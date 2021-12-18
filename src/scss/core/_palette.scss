@@ -1,70 +1,52 @@
-/*@mixin firstPalette{
-    $color-primary-blue: #114e4e;//Nombre,Apellido e iconos
-    $dirty-blue: #438792;//tiny rectangulo
-    $green: #a2deaf;// circulitos
-}
-
-@mixin secondPalette{
-    $dried-blood: #420101;
-    $red: #bd1010;
-    $tomato: #e95626;
-}
-
-@mixin thirdPalette{
-    $slate: #3e5b65;
-    $yellow: #eab052;
-    $sky-blue: #a0c0cf;
-}*/
-
 //RECTANGULO
+.rectangleblue {
+  background-color: $dirty-blue;
+}
 .rectanglered {
   background-color: $red;
-  width: 5px;
-  height: 42px;
 }
 
 .rectanglemix {
   background-color: $yellow;
-  width: 5px;
-  height: 42px;
 }
 
 //NOMBRE Y APELLIDOS
 
+.nameblue {
+  color: $color-primary-blue;
+}
+
 .namered {
-  line-height: 1.11;
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  color: $dried-blood; //$dried-blood
-  font-family: $font-title-card;
-  font-weight: bold;
+  color: $dried-blood;
 }
 .namemix {
-  line-height: 1.11;
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  color: $slate; //$dried-blood
-  font-family: $font-title-card;
-  font-weight: bold;
+  color: $slate;
 }
 
 //CIRCULOS ICONOS
 
-
-.blueicon{
-  border: 3px solid $green; //$tomato
+.blueiconcircle {
+  border: 3px solid $green;
 }
 
-.redicon{
+.rediconcircle {
   border: 3px solid $tomato;
 }
 
-.mixicon{
-  border: 3px solid  $sky-blue;
+.mixiconcircle {
+  border: 3px solid $sky-blue;
 }
 
 //iconos
 
-.svg-inline--fa path{
-  fill:red;
+.blueicon {
+  color: $color-primary-blue;
+}
+
+.redicon {
+  color: $dried-blood;
+}
+
+.mixicon {
+  color: $slate;
 }
