@@ -1,10 +1,9 @@
-
-
 // Elementos que cambian
 const colorOptions = document.querySelectorAll(".design__radio");
 const icon = document.querySelectorAll(".icon-js");
 const tinyRectangle = document.querySelector(".rectangle-js");
 const fullName = document.querySelector(".fullname-js");
+const cardIcons = document.querySelectorAll(".cardicon-js");
 
 //Handlefunction
 function handleChangeColorCard(event) {
@@ -35,7 +34,7 @@ function handleChangeColorCard(event) {
     fullName.classList.remove("namered");
     fullName.classList.remove("nameblue");
     fullName.classList.add("namemix");
-  }//ICON CIRCLES
+  } //ICON CIRCLES
   for (const eachIcon of icon) {
     if (optionSelected === "blue-green") {
       eachIcon.classList.remove("mixiconcircle");
@@ -49,12 +48,25 @@ function handleChangeColorCard(event) {
       eachIcon.classList.remove("rediconcircle");
       eachIcon.classList.remove("iconbluecircle");
       eachIcon.classList.add("mixiconcircle");
-    }//ICONS
-    
+    } //ICONS
+  }
+  for (const eachCardIcon of cardIcons) {
+    if (optionSelected === "blue-green") {
+      eachCardIcon.classList.remove("redicon");
+      eachCardIcon.classList.remove("mixicon");
+      eachCardIcon.classList.add("blueicon");
+    } else if (optionSelected === "red-orange") {
+      eachCardIcon.classList.remove("blueicon");
+      eachCardIcon.classList.remove("mixicon");
+      eachCardIcon.classList.add("redicon");
+    } else if (optionSelected === "color-mix") {
+      eachCardIcon.classList.remove("redicon");
+      eachCardIcon.classList.remove("iblueicon");
+      eachCardIcon.classList.add("mixicon");
+    }
   }
 }
 
 for (const eachPalette of colorOptions) {
   eachPalette.addEventListener("click", handleChangeColorCard);
 }
-
