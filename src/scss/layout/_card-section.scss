@@ -51,10 +51,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: background-color ease 0.5s;
-      &:hover {
-        background-color: $green;
-      }
+
       &-1 {
         font-size: 18px;
         transform: scale(1);
