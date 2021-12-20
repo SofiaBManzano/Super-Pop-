@@ -11,5 +11,5 @@ function legendHandler(event){
 }
 //Esta función nos coge el siguiente elemento hermano y le hace un toggle.
 function collapse(elementToCollapse){
-    elementToCollapse.target.nextElementSibling.classList.toggle('collapsed');
+    elementToCollapse.currentTarget.nextElementSibling.classList.toggle('collapsed');
 }
