@@ -24,6 +24,7 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-bottom: 30px;
+    cursor: pointer;
 
     &--img {
       height: 22px;
@@ -38,6 +39,7 @@
     }
   }
 }
+
 .sharebuttonorange {
   background-color: $color-primary;
   color: $white;
@@ -62,36 +64,57 @@
     color: $color-font-primary;
     margin-top: 30px;
   }
-  &__link {
-    font-family: $primary-font-family;
-    font-size: 1.2rem;
-    color: red;
+
+  .collapsed {
+    height: 0;
+    visibility: collapse;
   }
-  &__twitter {
+
+  .share_creation {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    text-decoration: none;
-    width: 181px;
-    height: 30px;
-    margin: 10px 33px 30px 29px;
-    padding: 3px 9px 6px 10.5px;
-    border-radius: 3px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-    background-color: $color-twitter;
-    font-size: 1.4rem;
-    color: $white;
-    font-family: $primary-font-family;
-    line-height: 1.43;
-    letter-spacing: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    &--img {
+    align-items: center;
+    gap: 10px;
+
+    &__title {
+      font-family: $primary-font-family;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $color-font-primary;
+      margin-top: 30px;
+    }
+    &__link {
+      font-family: $primary-font-family;
+      font-size: 1.2rem;
+      color: red;
+    }
+    &__twitter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      width: 181px;
+      height: 30px;
+      margin: 10px 33px 30px 29px;
+      padding: 3px 9px 6px 10.5px;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      background-color: $color-twitter;
+      font-size: 1.4rem;
       color: $white;
-      margin-right: 10px;
-      width: 18px;
-      height: 18px;
+      font-family: $primary-font-family;
+      line-height: 1.43;
+      letter-spacing: normal;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      &--img {
+        color: $white;
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }

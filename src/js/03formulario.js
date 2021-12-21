@@ -33,7 +33,7 @@ jobInput.addEventListener('input', writeJob);
 emailInput.addEventListener('keyup', handleKeyEmail);*/
 
 let data = {
-  palette: 1,
+  palette: '1',
   name: "",
   job: "",
   phone: "",
@@ -43,7 +43,19 @@ let data = {
   photo: "",
 };
 
+function getPalette(){
+  const radioButtons = document.getElementsByName('color-palet');
+  radioButtons.forEach(radioButton =>{
+    radioButton.addEventListener('change', () =>{
+      if(radioButton.checked){
+        data.palette = radioButton.value;
+      }  
+    });
+  });
+}
+
 function getUserData(input) {
+
   let userInputName = input.currentTarget.name;
   let userInputValue = input.currentTarget.value;
   if (userInputName === "name") {
@@ -71,6 +83,8 @@ function getUserData(input) {
   } else if (userInputName === "github") {
     data.github = userInputValue;
   }
+  getPalette();
+  setLocalStorage();
 }
 function handleInputData(event) {
   event.preventDefault();
@@ -88,3 +102,9 @@ resetBtn.addEventListener("click", () => {
   nameCard.innerHTML = "Nombre Apellido";
   jobCard.innerHTML = "Front-end developer";
 });
+
+//Set local storage
+
+function setLocalStorage(){
+  localStorage.setItem('data', JSON.stringify(data));
+}

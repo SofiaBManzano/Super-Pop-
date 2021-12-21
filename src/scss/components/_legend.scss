@@ -37,6 +37,10 @@
     width: 16px;
     color: $color-font-primary;
     cursor: pointer;
+    transition: transform 0.4s;
+    &--up {
+      transform: rotate(180deg);
+    }
   }
 
   .collapsed {

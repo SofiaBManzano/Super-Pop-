@@ -11,8 +11,12 @@
     color: $color-primary-blue;
     display: flex;
     flex-direction: column;
-    &:last-of-type {
+    &:last-child {
       margin-bottom: 0;
+    }
+    &:nth-child(3) {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
     .fill__input {
       margin-top: 7px;
@@ -42,7 +46,12 @@
       width: 140px;
       height: 30px;
       margin-top: 7px;
+      cursor: pointer;
     }
+    .label__img {
+      width: 100%;
+    }
+
     .fill__profile-pic {
       width: 30px;
       height: 30px;

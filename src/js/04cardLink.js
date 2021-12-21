@@ -1,6 +1,8 @@
 "use strict";
 
 const shareCreationLink = document.querySelector(".js-shareCreationLink");
+const twitterHref = document.querySelector('.share_creation__twitter');
+
 
 function sendUserInfo() {
   fetch("https://awesome-profile-cards.herokuapp.com/card", {
@@ -10,9 +12,9 @@ function sendUserInfo() {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       shareCreationLink.href = data.cardURL;
       shareCreationLink.innerText = data.cardURL;
+      twitterHref.href = `https://twitter.com/intent/tweet?text=%C2%A1Comparte%20esta%20tarjeta%20super%20molona%21&url=${data.cardURL}`;
     });
 }
 

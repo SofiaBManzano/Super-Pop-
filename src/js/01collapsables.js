@@ -1,27 +1,15 @@
-"use strict";
-
-//ELEMENTOS HTML
-
-//Collapsables
-//Falta mejorar hacer 1 sola funcion para los collapsables
+'use strict';
 
 const legends = document.querySelectorAll(".js-legend");
-const designContainer = document.querySelector(".design-container");
-const fillContainer = document.querySelector(".fill-container");
-const shareContainer = document.querySelector(".sharecontainer");
 
-function legendHandler() {
-  designContainer.classList.toggle("collapsed");
+legends.forEach( legend => legend.addEventListener('click', legendHandler));
+
+function legendHandler(event){
+    const arrow = event.target.children[1];
+    collapse(event);  
+    arrow.classList.toggle('legend__arrow--up');
 }
-
-function legendHandler1() {
-  fillContainer.classList.toggle("collapsed");
+//Esta función nos coge el siguiente elemento hermano y le hace un toggle.
+function collapse(elementToCollapse){
+    elementToCollapse.currentTarget.nextElementSibling.classList.toggle('collapsed');
 }
-
-function legendHandler2() {
-  shareContainer.classList.toggle("collapsed");
-}
-
-legends[0].addEventListener("click", legendHandler);
-legends[1].addEventListener("click", legendHandler1);
-legends[2].addEventListener("click", legendHandler2);
