@@ -88,13 +88,14 @@
       font-family: $primary-font-family;
       font-size: 1.2rem;
       color: red;
+      text-align: center;
     }
-    &__twitter {
+    &__twitter, &__linkedin, &__facebook {
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      width: 181px;
+      width: 200px;
       height: 30px;
       margin: 10px 33px 30px 29px;
       padding: 3px 9px 6px 10.5px;
@@ -109,6 +110,7 @@
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
+      cursor: pointer;
       &--img {
         color: $white;
         margin-right: 10px;
