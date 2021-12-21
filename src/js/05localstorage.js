@@ -2,7 +2,7 @@
 
 function getObjectFromLocalStorage() {
   const localStorageData = localStorage.getItem('data');
-  if (localStorageData !== 'null') {
+  if (localStorageData !== null) {
     const objectArray = JSON.parse(localStorageData);
     data = objectArray;
     getPalette();
