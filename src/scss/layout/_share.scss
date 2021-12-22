@@ -88,6 +88,8 @@
       font-family: $primary-font-family;
       font-size: 1.2rem;
       color: red;
+      text-align: center;
+      cursor: pointer;
     }
     &__twitter {
       display: flex;
@@ -109,6 +111,7 @@
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
+      cursor: pointer;
       &--img {
         color: $white;
         margin-right: 10px;

@@ -12,12 +12,25 @@ function sendUserInfo() {
   })
     .then((response) => response.json())
     .then((data) => {
-      shareCreationLink.href = data.cardURL;
-      shareCreationLink.innerText = data.cardURL;
-      twitterHref.href = `https://twitter.com/intent/tweet?text=%C2%A1Comparte%20esta%20tarjeta%20super%20molona%21&url=${data.cardURL}`;
+      if (data.success === true) {
+        shareCreationLink.href = data.cardURL;
+        shareCreationLink.innerText = data.cardURL;
+        twitterHref.href = `https://twitter.com/intent/tweet?text=%C2%A1Comparte%20esta%20tarjeta%20super%20molona%21&url=${data.cardURL}`;
+       // linkedinHref.href = `https://www.linkedin.com/sharing/share-offsite/?url=${data.cardURL}`;
+        //facebookHref.href = `http://www.facebook.com/share.php?u=${data.cardURL}`;
+      } else {
+        const messageNewCard = document.querySelector(".share_creation__title");
+        const shareCardRrss = document.querySelectorAll(".js-share-RRSS");
+        for (const card of shareCardRrss) {
+          card.classList.add('collapsed');
+          console.log(card);
+        }
+        messageNewCard.innerHTML = "¡Error!";
+        shareCreationLink.innerHTML =
+          "Por favor, asegúrese de que ha cumplimentado todos los campos";
+      }
     });
 }
-
 const sharebutton = document.querySelector(".share_button__item");
 const sharecreation = document.querySelector(".share_creation ");
 
