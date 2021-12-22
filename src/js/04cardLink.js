@@ -20,11 +20,15 @@ function sendUserInfo() {
         linkedinHref.href = `https://www.linkedin.com/sharing/share-offsite/?url=${data.cardURL}`;
         facebookHref.href = `http://www.facebook.com/share.php?u=${data.cardURL}`;
       } else {
-        const messageNewCard = document.querySelector('.share_creation__title');
-        //const shareCardRrss = document.querySelectorAll(".js-share-RRSS");
-        messageNewCard.innerHTML = 'Error';
+        const messageNewCard = document.querySelector(".share_creation__title");
+        const shareCardRrss = document.querySelectorAll(".js-share-RRSS");
+        for (const card of shareCardRrss) {
+          card.classList.add('collapsed');
+          console.log(card);
+        }
+        messageNewCard.innerHTML = "¡Error!";
         shareCreationLink.innerHTML =
-          'Por favor, asegúrese de que ha cumplimentado todos los campos';
+          "Por favor, asegúrese de que ha cumplimentado todos los campos";
       }
     });
 }

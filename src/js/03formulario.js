@@ -101,6 +101,8 @@ const resetBtn = document.querySelector(".js-resetBtn");
 resetBtn.addEventListener("click", () => {
   nameCard.innerHTML = "Nombre Apellido";
   jobCard.innerHTML = "Front-end developer";
+  profileImage.style.backgroundImage = `url(https://placekitten.com/240/200)`;
+  profilePreview.style.backgroundColor = 'white';
 });
 
 //Set local storage

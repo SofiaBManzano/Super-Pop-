@@ -56,6 +56,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  //padding-bottom: 30px;
 
   &__title {
     font-family: $primary-font-family;
@@ -89,7 +90,9 @@
       font-size: 1.2rem;
       color: red;
       text-align: center;
+      cursor: pointer;
     }
+   
     &__twitter, &__linkedin, &__facebook {
       display: flex;
       align-items: center;
@@ -117,6 +120,9 @@
         width: 18px;
         height: 18px;
       }
+    }
+    &__linkedin, &__facebook {
+      display: none;
     }
   }
 }
