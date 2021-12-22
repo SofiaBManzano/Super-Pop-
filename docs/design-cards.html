@@ -3,22 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>Proximamente...</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/bd118f2037.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <header class="header">
-      <img
+     <a href="../index.html"> <img
         class="header__img"
         src="./assets/images/tarjetas-molonas.png"
         alt="awesome profile cards"
       />
+    </a>
     </header>
 
     <main class="designmain">
@@ -31,52 +36,36 @@
           </button>
           <article class="card">
             <div class="card__title">
-              <div class="card__title--rectangle"></div>
+              <div class="card__title--rectangle rectangle-js rectangleblue"></div>
               <div class="card__title--text">
-                <h3 class="name js-nameInput">nombre apellido</h3>
+                <h3 class="name nameblue js-nameInput fullname-js">nombre apellido</h3>
                 <h4 class="subtitle js-jobInput">Front-end developer</h4>
               </div>
             </div>
-            <div class="card__photo"></div>
+            <div class="card__photo profile__preview js__profile-preview"></div>
             <ul class="card__list">
               <li>
-                <div class="card__list--icon">
+                <div class="card__list--icon icon-js blueiconcircle ">
                   <a href="#">
-                    <img
-                      class="card__list--icon-1"
-                      src="./assets/images/mobile-alt-solid.svg"
-                      alt="mobile"
-                  /></a>
+                    <i class="fas fa-mobile-alt card__list--icon-1 cardicon-js blueicon"></i></a>
                 </div>
               </li>
               <li>
-                <div class="card__list--icon">
-                  <a href="mailto:email@email.com" class="js_preview_email">
-                    <img
-                      class="card__list--icon-2"
-                      src="./assets/images/envelope-regular.svg"
-                      alt=""
-                  /></a>
+                <div class="card__list--icon icon-js blueiconcircle ">
+                  <a href="mailto:email@email.com" class="js_preview_email card__list--icon-1">
+                    <i class="far fa-envelope cardicon-js blueicon"></i></a>
                 </div>
               </li>
               <li>
-                <div class="card__list--icon">
+                <div class="card__list--icon icon-js blueiconcircle ">
                   <a href="#"
-                    ><img
-                      class="card__list--icon-3"
-                      src="./assets/images/linkedin-in-brands.svg"
-                      alt=""
-                  /></a>
+                    ><i class="fab fa-linkedin-in card__list--icon-1 cardicon-js blueicon"></i></a>
                 </div>
               </li>
               <li>
-                <div class="card__list--icon">
+                <div class="card__list--icon icon-js blueiconcircle ">
                   <a href="#"
-                    ><img
-                      class="card__list--icon-4"
-                      src="./assets/images/github-alt-brands.svg"
-                      alt=""
-                  /></a>
+                    ><i class="fab fa-github-alt card__list--icon-1 cardicon-js blueicon"></i></a>
                 </div>
               </li>
             </ul>
@@ -112,6 +101,7 @@
                   type="radio"
                   name="color-palet"
                   id="blue-green"
+                  value="1"
                   checked
                 />
                 <div class="design__color design__color--primary-blue"></div>
@@ -125,6 +115,7 @@
                   type="radio"
                   name="color-palet"
                   id="red-orange"
+                  value="2"
                 />
                 <div class="design__color design__color--dried-blood"></div>
                 <div class="design__color design__color--red"></div>
@@ -137,6 +128,7 @@
                   type="radio"
                   name="color-palet"
                   id="color-mix"
+                  value="3"
                 />
                 <div class="design__color design__color--slate"></div>
                 <div class="design__color design__color--yellow"></div>
@@ -165,11 +157,11 @@
               title="Click to open"
             />
           </div>
-          <div class="fill-container">
+          <div class="fill-container collapsed">
             <label class="fill__label" for="name"
               >Nombre completo
               <input
-                class="fill__input js-fullname"
+                class="fill__input fill__input-js js-fullname"
                 type="text"
                 name="name"
                 id="name"
@@ -179,24 +171,32 @@
             <label class="fill__label" for="job"
               >Puesto
               <input
-                class="fill__input js-job"
+                class="fill__input fill__input-js js-job"
                 type="text"
                 name="job"
                 id="job"
                 placeholder="Ej.: Front-end unicorn"
               />
             </label>
-            <label class="fill__label" for="profilePic"
-              >Imagen de perfil
-              <div class="label__container">
-                <button class="fill__btn">Añadir imagen</button>
-                <div class="fill__profile-pic"></div>
+            <div class="fill__label" for="profilePic">
+              <p class="label__img">Imagen de perfil</p>
+              <label class="fill__btn js__profile-trigger" for="img-selector"
+                >Añadir imagen</label
+              >
+              <input
+                class="action__hiddenField js__profile-upload-btn hidden"
+                type="file"
+                name="photo"
+                id="img-selector"
+              />
+              <div class="label__container profile">
+                <div class="fill__profile-pic profile__image js__profile-image"></div>
               </div>
-            </label>
+            </div>
             <label class="fill__label" for="email"
               >Email
               <input
-                class="fill__input js-email"
+                class="fill__input fill__input-js js-email"
                 type="email"
                 name="email"
                 id="email"
@@ -206,17 +206,18 @@
             <label class="fill__label" for="phone"
               >Teléfono
               <input
-                class="fill__input"
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Ej.: 555-55-55-55"
+              class="fill__input fill__input-js"
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              name="phone"
+              id="phone"
+              placeholder="Ej.: 555-555-555"
               />
             </label>
             <label class="fill__label" for="linkedin"
               >Linkedin
               <input
-                class="fill__input"
+                class="fill__input fill__input-js"
                 type="text"
                 name="linkedin"
                 id="linkedin"
@@ -226,7 +227,7 @@
             <label class="fill__label" for="github"
               >Github
               <input
-                class="fill__input"
+                class="fill__input fill__input-js"
                 type="text"
                 name="github"
                 id="github"
@@ -255,26 +256,27 @@
               title="Click to open"
             />
           </div>
-          <div class="sharecontainer">
+          <div class="sharecontainer collapsed">
             <section class="share_button">
-              <div class="share_button__item sharebuttonorange">
+              <button type="submit" class="share_button__item sharebuttonorange">
                 <img
                   class="share_button__item--img"
                   src="./assets/images/address-card-regular (2).svg"
                   title="icon"
                 />Crear Tarjeta
-              </div>
+              </button>
             </section>
 
             <section class="share_creation collapsed">
               <div class="share_button__item--line"></div>
               <h3 class="share_creation__title">La tarjeta ha sido creada:</h3>
-              <a
-                class="share_creation__link href"
+              <a target="_blank"
+                class="share_creation__link href js-shareCreationLink"
                 src="https://awesome-profile-card.com?id=A456DF0001"
                 >https://awesome-profile-card.com?id=A456DF0001</a
               >
-              <a class="share_creation__twitter" href="#"
+
+              <a target="_blank"class="share_creation__twitter js-share-RRSS" href=""
                 ><img
                   class="share_creation__twitter--img"
                   src="./assets/images/twitter.svg"
