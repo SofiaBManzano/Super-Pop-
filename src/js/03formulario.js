@@ -33,7 +33,7 @@ jobInput.addEventListener('input', writeJob);
 emailInput.addEventListener('keyup', handleKeyEmail);*/
 
 let data = {
-  palette: '1',
+  palette: "1",
   name: "",
   job: "",
   phone: "",
@@ -43,19 +43,12 @@ let data = {
   photo: "",
 };
 
-function getPalette(){
-  const radioButtons = document.getElementsByName('color-palet');
-  radioButtons.forEach(radioButton =>{
-    radioButton.addEventListener('change', () =>{
-      if(radioButton.checked){
-        data.palette = radioButton.value;
-      }  
-    });
-  });
+function getPalette(event) {
+  data.palette = event.target.value;
+  handleChangeColorCard(data.palette);
 }
 
 function getUserData(input) {
-
   let userInputName = input.currentTarget.name;
   let userInputValue = input.currentTarget.value;
   if (userInputName === "name") {
@@ -100,10 +93,14 @@ const resetBtn = document.querySelector(".js-resetBtn");
 resetBtn.addEventListener("click", () => {
   nameCard.innerHTML = "Nombre Apellido";
   jobCard.innerHTML = "Front-end developer";
+  profilePreview.style.backgroundImage = "url(https://placekitten.com/240/200)";
+  profileImage.style.backgroundImage = "";
+  data.palette = "1";
+  handleChangeColorCard(data.palette);
 });
 
 //Set local storage
 
-function setLocalStorage(){
-  localStorage.setItem('data', JSON.stringify(data));
+function setLocalStorage() {
+  localStorage.setItem("data", JSON.stringify(data));
 }

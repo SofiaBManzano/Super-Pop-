@@ -6,10 +6,11 @@ const fullName = document.querySelector(".fullname-js");
 const cardIcons = document.querySelectorAll(".cardicon-js");
 
 //Handlefunction
-function handleChangeColorCard(event) {
-  const optionSelected = event.target.id;
+function handleChangeColorCard(palette) {
+  const optionSelected = palette;
+
   // FIRST OPTION BLUE-GREEN RECTANGLE&NAME
-  if (optionSelected === "blue-green") {
+  if (optionSelected === "1") {
     tinyRectangle.classList.remove("rectanglered");
     tinyRectangle.classList.remove("rectanglemix");
     tinyRectangle.classList.add("rectangleblue");
@@ -18,7 +19,7 @@ function handleChangeColorCard(event) {
     fullName.classList.add("nameblue");
 
     // SECOND OPTION RED-ORANGE RECTANGLE&NAME
-  } else if (optionSelected === "red-orange") {
+  } else if (optionSelected === "2") {
     tinyRectangle.classList.remove("rectangleblue");
     tinyRectangle.classList.remove("rectanglemix");
     tinyRectangle.classList.add("rectanglered");
@@ -27,7 +28,7 @@ function handleChangeColorCard(event) {
     fullName.classList.add("namered");
 
     // SECOND OPTION COLOR-MIX RECTANGLE&NAME
-  } else if (optionSelected === "color-mix") {
+  } else if (optionSelected === "3") {
     tinyRectangle.classList.remove("rectangleblue");
     tinyRectangle.classList.remove("rectanglered");
     tinyRectangle.classList.add("rectanglemix");
@@ -36,30 +37,30 @@ function handleChangeColorCard(event) {
     fullName.classList.add("namemix");
   } //ICON CIRCLES
   for (const eachIcon of icon) {
-    if (optionSelected === "blue-green") {
+    if (optionSelected === "1") {
       eachIcon.classList.remove("mixiconcircle");
       eachIcon.classList.remove("rediconcircle");
       eachIcon.classList.add("blueiconcircle");
-    } else if (optionSelected === "red-orange") {
+    } else if (optionSelected === "2") {
       eachIcon.classList.remove("mixiconcircle");
       eachIcon.classList.remove("iconbluecircle");
       eachIcon.classList.add("rediconcircle");
-    } else if (optionSelected === "color-mix") {
+    } else if (optionSelected === "3") {
       eachIcon.classList.remove("rediconcircle");
       eachIcon.classList.remove("iconbluecircle");
       eachIcon.classList.add("mixiconcircle");
     } //ICONS
   }
   for (const eachCardIcon of cardIcons) {
-    if (optionSelected === "blue-green") {
+    if (optionSelected === "1") {
       eachCardIcon.classList.remove("redicon");
       eachCardIcon.classList.remove("mixicon");
       eachCardIcon.classList.add("blueicon");
-    } else if (optionSelected === "red-orange") {
+    } else if (optionSelected === "2") {
       eachCardIcon.classList.remove("blueicon");
       eachCardIcon.classList.remove("mixicon");
       eachCardIcon.classList.add("redicon");
-    } else if (optionSelected === "color-mix") {
+    } else if (optionSelected === "3") {
       eachCardIcon.classList.remove("redicon");
       eachCardIcon.classList.remove("iblueicon");
       eachCardIcon.classList.add("mixicon");
@@ -68,5 +69,5 @@ function handleChangeColorCard(event) {
 }
 
 for (const eachPalette of colorOptions) {
-  eachPalette.addEventListener("click", handleChangeColorCard);
+  eachPalette.addEventListener("click", getPalette);
 }
