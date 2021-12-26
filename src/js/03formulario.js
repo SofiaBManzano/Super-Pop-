@@ -97,6 +97,8 @@ resetBtn.addEventListener("click", () => {
   profileImage.style.backgroundImage = "";
   data.palette = "1";
   handleChangeColorCard(data.palette);
+  sharecreation.classList.toggle("collapsed");
+  sharebutton.classList.toggle("sharebuttongrey");
 });
 
 //Set local storage
