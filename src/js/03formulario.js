@@ -7,6 +7,10 @@ const jobInput = document.querySelector(".js-job");
 const jobCard = document.querySelector(".js-jobInput");
 const emailInput = document.querySelector(".js-email");
 const emailPreview = document.querySelector(".js_preview_email");
+const phoneInput = document.querySelector("#phone");
+const linkedinInput = document.querySelector("#linkedin");
+const gitHubInput = document.querySelector("#github");
+
 const allInput = document.querySelectorAll(".fill__input-js");
 //handler
 /*function writeName() {
@@ -32,7 +36,7 @@ nameInput.addEventListener('input', writeName);
 jobInput.addEventListener('input', writeJob);
 emailInput.addEventListener('keyup', handleKeyEmail);*/
 
-let data = {
+let data =   JSON.parse(localStorage.getItem("data")) || {
   palette: "1",
   name: "",
   job: "",
@@ -40,15 +44,17 @@ let data = {
   email: "",
   linkedin: "",
   github: "",
-  photo: "",
+  photo: "https://placekitten.com/240/200",
 };
+
+rememberUserData();
+
+
 
 function getPalette(event) {
   data.palette = event.target.value;
   handleChangeColorCard(data.palette);
-
 }
-
 function getUserData(input) {
   let userInputName = input.currentTarget.name;
   let userInputValue = input.currentTarget.value;
@@ -76,8 +82,7 @@ function getUserData(input) {
   } else if (userInputName === "github") {
     data.github = userInputValue;
   }
-  getPalette();
-  setLocalStorage();
+  setLocalStorage(); 
 }
 function handleInputData(event) {
   event.preventDefault();
@@ -103,9 +108,8 @@ resetBtn.addEventListener("click", () => {
 });
 
 //Set local storage
-/*
+
 function setLocalStorage() {
   const saveInfo =  JSON.stringify(data);
   localStorage.setItem("data", saveInfo);
 }
-*/

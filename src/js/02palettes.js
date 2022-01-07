@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 // Elementos que cambian
 const colorOptions = document.querySelectorAll(".design__radio");
 const icon = document.querySelectorAll(".icon-js");
@@ -8,7 +9,7 @@ const cardIcons = document.querySelectorAll(".cardicon-js");
 //Handlefunction
 function handleChangeColorCard(palette) {
   const optionSelected = data.palette;
- //data.palette = optionSelected;
+  data.palette = optionSelected;
 
   // FIRST OPTION BLUE-GREEN RECTANGLE&NAME
   if (optionSelected === "1") {
@@ -68,7 +69,9 @@ function handleChangeColorCard(palette) {
     }
     
   }
+
 }
+
 
 for (const eachPalette of colorOptions) {
   eachPalette.addEventListener("click", getPalette);
