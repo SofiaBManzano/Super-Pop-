@@ -12,9 +12,7 @@ function sendUserInfo() {
   })
     .then((response) => response.json())
     .then((dataServe) => {
-      console.log("hola");
       if (dataServe.success === true) {
-        console.log("adios");
         shareCreationLink.href = dataServe.cardURL;
         for (const card of shareCardRrss) {
           card.classList.remove("collapsed");

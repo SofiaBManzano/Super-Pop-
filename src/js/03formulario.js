@@ -46,6 +46,7 @@ let data = {
 function getPalette(event) {
   data.palette = event.target.value;
   handleChangeColorCard(data.palette);
+
 }
 
 function getUserData(input) {
@@ -102,7 +103,9 @@ resetBtn.addEventListener("click", () => {
 });
 
 //Set local storage
-
+/*
 function setLocalStorage() {
-  localStorage.setItem("data", JSON.stringify(data));
+  const saveInfo =  JSON.stringify(data);
+  localStorage.setItem("data", saveInfo);
 }
+*/

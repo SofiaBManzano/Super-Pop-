@@ -7,7 +7,8 @@ const cardIcons = document.querySelectorAll(".cardicon-js");
 
 //Handlefunction
 function handleChangeColorCard(palette) {
-  const optionSelected = palette;
+  const optionSelected = data.palette;
+ //data.palette = optionSelected;
 
   // FIRST OPTION BLUE-GREEN RECTANGLE&NAME
   if (optionSelected === "1") {
@@ -65,6 +66,7 @@ function handleChangeColorCard(palette) {
       eachCardIcon.classList.remove("iblueicon");
       eachCardIcon.classList.add("mixicon");
     }
+    
   }
 }
 
