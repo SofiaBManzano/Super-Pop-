@@ -4,6 +4,7 @@
 /* eslint-disable strict */
 /* eslint-disable semi */
 
+rememberUserData();
 
 
 function rememberUserData(){

@@ -47,7 +47,6 @@ let data =   JSON.parse(localStorage.getItem("data")) || {
   photo: "https://placekitten.com/240/200",
 };
 
-rememberUserData();
 
 
 
@@ -82,11 +81,12 @@ function getUserData(input) {
   } else if (userInputName === "github") {
     data.github = userInputValue;
   }
-  setLocalStorage(); 
+; 
 }
 function handleInputData(event) {
   event.preventDefault();
   getUserData(event);
+  setLocalStorage()
 }
 
 //Listener form
@@ -105,11 +105,23 @@ resetBtn.addEventListener("click", () => {
   handleChangeColorCard(data.palette);
   sharecreation.classList.toggle("collapsed");
   sharebutton.classList.toggle("sharebuttongrey");
+
+  data = {
+    palette: "1",
+    name: "",
+    job: "",
+    phone: "",
+    email: "",
+    linkedin: "",
+    github: "",
+    photo: "https://placekitten.com/240/200",
+  };
 });
 
 //Set local storage
 
 function setLocalStorage() {
   const saveInfo =  JSON.stringify(data);
+  localStorage.removeItem("data");
   localStorage.setItem("data", saveInfo);
 }
