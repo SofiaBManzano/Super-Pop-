@@ -4,7 +4,9 @@
 /* eslint-disable strict */
 /* eslint-disable semi */
 
-rememberUserData();
+if(localStorage.getItem("data")){
+    rememberUserData();
+}
 
 
 function rememberUserData(){
