@@ -9,7 +9,9 @@ rememberUserData();
 
 function rememberUserData(){
     nameInput.value = data.name;
+    nameCard.innerHTML = data.name;
     jobInput.value = data.job;
+    jobCard.innerHTML = data.job;
     emailInput.value = data.email;
     nameInput.value = data.name;
     const palette = parseInt(data.palette)-1;
