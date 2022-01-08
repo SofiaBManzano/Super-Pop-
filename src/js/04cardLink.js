@@ -44,6 +44,7 @@ function handleButtonClick(event) {
 
   sendUserInfo();
   changeColor();
+  setLocalStorage();
 }
 function changeColor() {
   sharebutton.classList.toggle("sharebuttongrey");

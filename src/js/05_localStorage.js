@@ -19,7 +19,7 @@ function rememberUserData(){
     phoneInput.value = data.phone;
     linkedinInput.value = data.linkedin;
     gitHubInput.value = data.github;
-    //NO FUNCIONA LO DE RECUPERAR LA IMAGEN DESDE EL LOCAL STORAGE, SALEN COSAS RARAS   
+   
     profileImage.style.backgroundImage = `url(${data.photo})`;
     profilePreview.style.backgroundImage = `url(${data.photo})`;
 

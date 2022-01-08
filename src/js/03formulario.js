@@ -37,7 +37,7 @@ jobInput.addEventListener('input', writeJob);
 emailInput.addEventListener('keyup', handleKeyEmail);*/
 
 let data =   JSON.parse(localStorage.getItem("data")) || {
-  palette: "1",
+  palette: "2",
   name: "",
   job: "",
   phone: "",
@@ -81,7 +81,7 @@ function getUserData(input) {
   } else if (userInputName === "github") {
     data.github = userInputValue;
   }
-; 
+
 }
 function handleInputData(event) {
   event.preventDefault();
