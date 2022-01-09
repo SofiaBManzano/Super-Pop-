@@ -81,15 +81,16 @@
 
     &__title {
       font-family: $primary-font-family;
-      font-size: 1.8rem;
+      font-size: 1.9rem;
       font-weight: 600;
       color: $color-font-primary;
       margin-top: 30px;
+      color:  #ee1268;
     }
     &__link {
       font-family: $primary-font-family;
       font-size: 1.2rem;
-      color: red;
+      color: #faff00;
       text-align: center;
       cursor: pointer;
     }

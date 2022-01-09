@@ -32,31 +32,31 @@
       height: 25px;
 
       &--primary-blue {
-        background-color: #52fd00;
+        background-color: $color-primary-blue;
       }
       &--dirty-blue {
-        background-color: #ffff00;
+        background-color: $dirty-blue;
       }
       &--green {
-        background-color: fuchsia;
+        background-color: $green;
       }
       &--dried-blood {
-        background-color: #ffa300;
+        background-color: $dried-blood;
       }
       &--red {
-        background-color: #0028ff;
+        background-color: $red;
       }
       &--tomato {
-        background-color: #cf0060;
+        background-color: $tomato;
       }
       &--slate {
-        background-color: #c501e2;
+        background-color: $slate;
       }
       &--yellow {
-        background-color: #ff0534;
+        background-color: $yellow;
       }
       &--sky-blue {
-        background-color: #2ef8a0;
+        background-color: $sky-blue;
       }
     }
   }

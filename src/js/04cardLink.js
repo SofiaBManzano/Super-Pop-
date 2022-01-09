@@ -31,7 +31,7 @@ function sendUserInfo() {
 
         messageNewCard.innerText = "¡Error!";
         shareCreationLink.innerHTML =
-          "Por favor, asegúrese de que ha cumplimentado todos los campos";
+          "Por favor, asegúrese de que ha cumplimentado todos los campos.";
       }
     });
 }
