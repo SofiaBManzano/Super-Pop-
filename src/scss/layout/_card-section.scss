@@ -1,5 +1,6 @@
 .card-container {
-  background-image: linear-gradient(#bfcdd0, #dde9ed);
+  // background-image: linear-gradient(#bfcdd0, #dde9ed);
+  background-image: url(https://images.assetsdelivery.com/compings_v2/ingalinder/ingalinder1603/ingalinder160300117.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +36,7 @@
   &__photo {
     width: 240px;
     height: 200px;
-    background-image: url(https://placekitten.com/240/200);
+    background-image: url(https://images.chicmagazine.com.mx/fDGV_iMKva6n0r5I9LoejdhgARw=/958x596/uploads/media/2020/09/24/avril-lavigne-que-fue-de.jpg);
   }
   &__list {
     display: flex;
@@ -95,19 +96,23 @@
 .reset__button {
   width: 75px;
   height: 30px;
-  border: solid 1px $white;
+  border: solid 2px grey;
   border-radius: 15px;
   margin-bottom: 20px;
-  background-color: transparent;
   font-family: $primary-font-family;
   text-transform: uppercase;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #fff;
+  box-shadow: 6px 6px #85bed1;
   cursor: pointer;
   transition: background-color ease 0.5s;
+  transition: border ease 0.2s;
   &:hover {
     background-color: rgba(255, 255, 255, 0.616);
+    box-shadow: 6px 6px #fb00ff;
+    border: solid 2px white;
   }
 
   &--icon {

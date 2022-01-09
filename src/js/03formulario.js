@@ -44,7 +44,7 @@ let data =   JSON.parse(localStorage.getItem("data")) || {
   email: "",
   linkedin: "",
   github: "",
-  photo: "https://placekitten.com/240/200",
+  photo: "https://images.chicmagazine.com.mx/fDGV_iMKva6n0r5I9LoejdhgARw=/958x596/uploads/media/2020/09/24/avril-lavigne-que-fue-de.jpg",
 };
 
 
@@ -99,7 +99,7 @@ const resetBtn = document.querySelector(".js-resetBtn");
 resetBtn.addEventListener("click", () => {
   nameCard.innerHTML = "Nombre Apellido";
   jobCard.innerHTML = "Front-end developer";
-  profilePreview.style.backgroundImage = "url(https://placekitten.com/240/200)";
+  profilePreview.style.backgroundImage = "url(https://images.chicmagazine.com.mx/fDGV_iMKva6n0r5I9LoejdhgARw=/958x596/uploads/media/2020/09/24/avril-lavigne-que-fue-de.jpg)";
   profileImage.style.backgroundImage = "";
   data.palette = "1";
   handleChangeColorCard(data.palette);
@@ -114,7 +114,7 @@ resetBtn.addEventListener("click", () => {
     email: "",
     linkedin: "",
     github: "",
-    photo: "https://placekitten.com/240/200",
+    photo: "https://images.chicmagazine.com.mx/fDGV_iMKva6n0r5I9LoejdhgARw=/958x596/uploads/media/2020/09/24/avril-lavigne-que-fue-de.jpg",
   };
 });
 

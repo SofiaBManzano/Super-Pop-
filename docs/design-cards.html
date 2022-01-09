@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Proximamente...</title>
+    <link rel="icon" href="./assets/images/superpop.jpg"/>
+    <title>Super Pop!</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -21,7 +22,7 @@
       <a href="./index.html">
         <img
           class="header__img"
-          src="./assets/images/tarjetas-molonas.png"
+          src="./assets/images/superpop-logo.png"
           alt="awesome profile cards"
         />
       </a>
@@ -209,7 +210,6 @@
               <input
               class="fill__input fill__input-js"
               type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
               name="phone"
               id="phone"
               placeholder="Ej.: 555-555-555"
@@ -271,17 +271,30 @@
             <section class="share_creation collapsed">
               <div class="share_button__item--line"></div>
               <h3 class="share_creation__title">La tarjeta ha sido creada:</h3>
-              <a target="_blank"
+              <a
+                target="_blank"
                 class="share_creation__link href js-shareCreationLink"
                 src="https://awesome-profile-card.com?id=A456DF0001"
                 >https://awesome-profile-card.com?id=A456DF0001</a
               >
 
-              <a target="_blank"class="share_creation__twitter js-share-RRSS" href=""
+              <a target="_blank" class="share_creation__twitter js-share-RRSS" href=""
                 ><img
                   class="share_creation__twitter--img"
                   src="./assets/images/twitter.svg"
                 />Compartir en Twitter</a
+              >
+              <a class="share_creation__linkedin js-share-RRSS" href=""
+              target="_blank"><img
+                  class="share_creation__linkedin--img"
+                  src="./assets/images/linkedin.svg"
+                />Comparte en LinkedIn</a
+              >
+              <a class="share_creation__facebook js-share-RRSS" href=""
+              target="_blank"><img
+                  class="share_creation__facebook--img"
+                  src="./assets/images/facebook.svg"
+                />Comparte en Facebook</a
               >
             </section>
           </div>
@@ -292,8 +305,12 @@
 
     </main>
     <footer class="page__footer">
-      <h6 class="page__footer--title">Awesome profile-cards @2021</h6>
-      <img class="page__footer--logo" src="./assets/images/logo-adalab.png" alt="" />
+      <h6 class="page__footer--title">Tarjetas super molonas @2021</h6>
+      <img
+        class="page__footer--logo"
+        src="./assets/images/superpop-logo.png"
+        alt=""
+      />
     </footer>
 
     <script src="./assets/js/main.js"></script>
