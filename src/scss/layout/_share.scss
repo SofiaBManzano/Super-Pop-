@@ -93,12 +93,14 @@
       text-align: center;
       cursor: pointer;
     }
-    &__twitter {
+    &__twitter,
+    &__linkedin,
+    &__facebook {
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      width: 181px;
+
       height: 30px;
       margin: 10px 33px 30px 29px;
       padding: 3px 9px 6px 10.5px;
@@ -120,6 +122,12 @@
         width: 18px;
         height: 18px;
       }
+    }
+    &__linkedin {
+      background-color: #0e76a8;
+    }
+    &__facebook {
+      background-color: #3b5998;
     }
   }
 }
