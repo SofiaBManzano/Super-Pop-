@@ -38,8 +38,8 @@ emailInput.addEventListener('keyup', handleKeyEmail);*/
 
 let data =   JSON.parse(localStorage.getItem("data")) || {
   palette: "2",
-  name: "",
-  job: "",
+  name: "Nombre y Apellido",
+  job: "Front-end developer",
   phone: "",
   email: "",
   linkedin: "",
