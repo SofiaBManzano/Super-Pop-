@@ -4,8 +4,8 @@ body {
 .maincards {
   height: 83%;
   width: 100%;
-  //background-color: $white-four;
-  background-color: $yellow-green;
+  background-color: greenyellow;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,8 +15,8 @@ body {
   @media (min-width: 768px) {
     height: 90%;
     justify-content: flex-end;
-    //background-color: $white-four;
-    background-color: $yellow-green;
+
+    background-color: greenyellow;
   }
 
   &__img {
