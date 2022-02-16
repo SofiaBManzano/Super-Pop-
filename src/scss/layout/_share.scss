@@ -41,7 +41,7 @@
 }
 
 .sharebuttonorange {
-  background-color: rgb(253, 0, 118);
+  background-color: $heavy-pink;
   color: $white;
 }
 
@@ -85,12 +85,12 @@
       font-weight: 600;
       color: $color-font-primary;
       margin-top: 30px;
-      color:  #ee1268;
+      color: $heavy-pink;
     }
     &__link {
       font-family: $primary-font-family;
       font-size: 1.2rem;
-      color: #faff00;
+      color: $yellow-text;
       text-align: center;
       cursor: pointer;
     }

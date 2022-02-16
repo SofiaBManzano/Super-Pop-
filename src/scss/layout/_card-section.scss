@@ -111,7 +111,7 @@
   transition: border ease 0.2s;
   &:hover {
     background-color: rgba(255, 255, 255, 0.616);
-    box-shadow: 6px 6px #fb00ff;
+    box-shadow: 6px 6px $heavy-pink;
     border: solid 2px white;
   }
 
